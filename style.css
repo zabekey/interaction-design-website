@@ -1,0 +1,59 @@
+body{
+    /* padding: 0; */
+    margin: 0;
+    margin-bottom: 10px;
+}
+#banner-content{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.top-banner-list-element:hover {
+    background-color: black;
+}
+
+#banner-list{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#banner-list li {
+    float: left;
+    list-style-type: none;
+}
+
+.top-banner-list-element {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+} 
+
+#banner-list-container{
+    display: inline-block;
+    float: right;
+}
+
+#banner-name-container{
+    display: inline-block;
+    float: left;
+    margin: 20px;
+}
+
+#name{
+    color: white;
+}
+
+.table{
+    table-layout: fixed;
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th{
+    border:2px solid black;
+}

@@ -2,33 +2,491 @@
 <html>  
     <head>  
         <title>
-            Accessible Components 
+            Yabeke Zike - Interaction Design
         </title>
-
-        <style>
-
-            .top-banner-list{
-                background-color: #333333;
-            }
-
-            .top-banner-list li:hover {
-                background-color: #111111;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
-        <header>
-            <div class="top-banner-container">
-                <div class="top-banner-content">
-                    <a href="#" class="logo">YourName</a>
-                        <ul id="top-banner-list">
-                            <li>Home</li>
-                            <li>About</a></li>
-                            <li><u><a href="#projects">Projects</a></u></li>
-                            <li>Contact</li>
+        <header> 
+                <div id="banner-content"> 
+                    <div id = "banner-name-container">
+                            <strong id = "name">Yabeke Zike's Website</strong>
+                    </div>
+                    <div id = "banner-list-container">       
+                        <ul id="banner-list">
+                            <li><a class="top-banner-list-element"> Home </a></li>
+                            <li><a class="top-banner-list-element"> About </a></li>
+                            <li><a class="top-banner-list-element"> Projects </a></li>
+                            <li><a class="top-banner-list-element"> Contact </a></li>
                         </ul>
+                    </div> 
                 </div>
-            </div>
         </header>
+
+    
+        <section id = "website-content">   
+            <h2> Accessible Components: DropDown Menu</h2>
+
+            <h3> Overview: Components are reusable elements that we as designers use to create 
+                and manage consistent designs. Common examples include buttons, checkboxes, and dropdowns.
+                We want to make sure that these components are acessible for our users, and this portion 
+                of my website will do a deep analysis on a dropdown menu specifically across different platforms.
+             </h3>
+
+             <h3> <u> Some Examples: </u></h3>
+             <h4> Here we will see different dropdown menus from three sources in different states and begin to dive deeper into thier different facets</h4>
+
+             <div id="Images">
+                <h4> Courses at Brown: </h4>
+                <img src="./images/C@B/C@B Default.png">
+                <img src="./images/C@B/C@B Active.png">
+
+
+                <h4> TopHat: </h4>
+                <img src="./images/TH/TH Default.png">
+                <img src="./images/TH/TH Active.png">
+
+                <h4> Google Calender: </h4>
+                <img src="./images/TH/TH Default.png">
+                <img src="./images/TH/TH Active.png">
+
+                <h4> Google Calender: </h4>
+                <img src="./images/Gcal/Gcal Default.png">
+                <img src="./images/Gcal/Gcal Active.png">
+             </div>
+
+             <h3> <u> Inputs: </u></h3>
+             <h4> Inputs are important to components as they are the means in which users can interact with the component itself, laying the foundation for learnability,
+                accessibility, memorability, and efficiency. In this section we will see interact with the different dropdowns aboce and use the touchpad, keyboard, 
+                as well as touch screen in order to navigate them and look at their different input capabilites.
+             </h4>
+
+             <table class = "table" style="width:100%">
+                <tr>    
+                    <th> </th>
+                    <th> Courses @ Brown</th>
+                    <th> TopHat </th>
+                    <th> Google Calander</th>
+                </tr>
+                <tr>
+                    <th>
+                        Touchpad
+                    </th>
+                    <td>
+                        <p> 
+                            - Press down on the touchpad to interact with the dropdown
+                            <br>
+                            - Once active, click the touchpad on a choice to select it
+                            <br>
+                            - Cannot drag or drop or even highlight text from the dropdown menu  
+                            <br>
+                            - Clicking anywhere exists the dropdown
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Press down on the touchpad to interact with the dropdown
+                            <br>
+                            - Once active, click the touchpad on a choice to select it
+                            <br>
+                            - Cannot drag or drop or even highlight text from the dropdown menu  
+                            <br>
+                            - Clicking anywhere exists the dropdown
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Press down on the touchpad to interact with the dropdown
+                            <br>
+                            - Once active, click the touchpad on a choice to select it
+                            <br>
+                            - Cannot drag or drop or even highlight text from the dropdown menu  
+                            <br>
+                            - Clicking anywhere exists the dropdown
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Keyboard
+                    </th>
+                    <td>
+                        <p> 
+                            - Navigate to the dropdown through the use of the tab key
+                            <br>
+                            - Use the space or the up/down arrow keys to activate the dropdown 
+                            <br>
+                            - Once the dropdown is active, navigation is done with the up/down arrow keys, and selections 
+                            are made through the space or enter keys.However, when at the ends of the list, pressing the arrows doesn’t loop around the list.
+                            <br>
+                            - No other keys seem to have functionality on the page when traversing or when the dropdown is active 
+                            <br>
+                            - The Esc key is used to exit the dropdown activation 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Navigate to the dropdown through the use of the tab key
+                            <br>
+                            - Once on the dropdown, the space or enter keys are used to activate the dropdown 
+                            <br>
+                            - Only the up/down arrow keys are used to navigate the activated dropdown and loops when at the ends of the list. 
+                            Furthermore, the spacebar or enter keys are used to select the options
+                            <br>
+                            - No other keys seem to have functionality on the page when traversing or when the dropdown is active 
+                            <br>
+                            - The Esc key is used to exit the dropdown activation 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Navigate to the dropdown through the use of the tab key
+                            <br>
+                            - The space, enter, or the up/down arrow keys are used to activate the dropdown 
+                            <br>
+                            - Any of the arrow keys can be used to navigate the drop and doesn’t loop around the list when navigating the dropdown list 
+                            <br>
+                            - Other keys have some unrelated functionality to the dropdown and activate other parts of the page  
+                            <br>
+                            - The Esc key is used to exit the dropdown activation 
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Touchscreen
+                    </th>
+                    <td>
+                        <p> 
+                            - Tapping on the screen and component to interact with the dropdown
+                            <br>
+                            - Once active, tap to select choices from the dropdown list
+                            <br>
+                            - Cannot drag or drop or even highlight text from the dropdown menu  
+                            <br>
+                            - Tapping elsewhere deactivates the dropdown 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Tapping on the screen and component to interact with the dropdown
+                            <br>
+                            - Once active, tap to select choices from the dropdown list
+                            <br>
+                            - Can drag and drop links from the dropdown menu 
+                            <br>
+                            - Tapping elsewhere deactivates the dropdown 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            N/A
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        User Considerations 
+                    </th>
+                    <td>
+                        <p> 
+                            - Overall navigation with all three modes is learnable and memorable by the user. For instance, the approach of tapping/clicking to select choices is a simple approach that users can pick up on fast. Furthermore, the traversal on the keyboard with the tab key is quick to learn for the user as well
+                            <br>
+                            - Espacing the dropdown through the esc key or clicking/tapping elsewhere is learnable and memorable for the user due to its intuitiveness when interacting with the page
+                            <br>
+                            - As the dropdown menu is vertical, traversing through the list with the up and down arrows is both learnable and memorable due to the visual cues of the dropdown
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Overall navigation with all three modes is learnable and memorable by the user. For instance, the approach of tapping/clicking to select choices is a simple approach that users can pick up on fast. Furthermore, the traversal on the keyboard with the tab key as well as activation through the space and enter key specifically is intuitive for the user as well
+                            <br>
+                            - Espacing the dropdown through the esc key or clicking/tapping elsewhere is learnable and memorable for the user due to its intuitiveness when interacting with the page
+                            <br>
+                            - As the dropdown menu is vertical, traversing through the list with the up and down arrows is both learnable and memorable due to the visual cues of the dropdown
+                            <br>
+                            - Being able to loop around the activated dropdown with the arrows is efficient for the user 
+                            <br>
+                            - Being able to drag and drop links in the drop-down here is efficient if the user needs to use this link elsewhere 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Overall navigation with all three modes is learnable and memorable by the user. For instance, the approach of tapping/clicking to select choices is a simple approach that users can pick up on fast. Furthermore, the traversal on the keyboard with the tab key as well as activation through the space, enter key, or arrows allows for a wide array of options for the user to pick up on and use 
+                            <br>
+                            - Espacing the dropdown through the esc key is learnable and memorable for the user due to its intuitiveness when interacting with the page through the keyboard function 
+                            <br>
+                            - Being able to highlight text within the drop-down menu is efficient if the user neds to use this text or options elsewhere
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Comparisons 
+                    </th>
+                    <td>
+                        <p> 
+                            Compared to Tophat and Google Calendar, this component lacks functionality when it comes to interacting with the dropdown menu options outside of selection. 
+                            Furthermore, it does not allow for the enter key to be used to activate the dropdown menu which is a little unintuitive as that was my initial idea when working with the keyboard and it makes more sense than using the up or down arrows.
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            When traversing this dropdown, the arrows can loop around the ends of the lists. Furthermore, only the space and enter keys are used to make selections on the dropdown menu which feels intuitive for the user. I think because this dropdown 
+                            does these things as well as everything else as the other dropdown, this is the most preferable.
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            The Google Calendar dropdown component has a couple of pitfalls when comparing it to other components. 
+                            Firstly, the dropdown is not available on touchscreens as it is replaced by various buttons, lacking consistency across platforms. Next, even while having the dropdown activated, other keys on the keyboard can activate other parts of the website which is unhelpful in this case. 
+                        </p>
+                    </td>
+                </tr>
+             </table>
+
+             <h3> <u> Outputs: </u></h3>
+             <h4> The output to a users' input is of equal importance when it comes to consideration around a users experince on a platform. In this section, we will look into
+                these dropdown and thier reactions to differnt inputs in order to analyze thier different behaviors
+             </h4>
+
+             <table class = "table" style="width:100%">
+                <tr>    
+                    <th> </th>
+                    <th> Courses @ Brown</th>
+                    <th> TopHat </th>
+                    <th> Google Calander</th>
+                </tr>
+                <tr>
+                    <th>
+                        Initial State
+                    </th>
+                    <td>
+                        <p> 
+                            - The arrow present on the end of the component indicates it is a drop-down
+                            <br>
+                            - With the touchscreen, the dropdown has up and down arrows instead of just a down arrow to indicate it is a dropdown 
+                            <br>
+                            - Box-like component with contrasting color to background and containing initial text of current/default selection
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - The arrow present on the end of the component indicates it is a drop-down
+                            <br>
+                            - Profile icon with username alongside arrow with no border like or shape distinction from the background 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - The arrow present on the end of the component indicates it is a drop-down
+                            <br>
+                            - Oval shape with slight border containing the current/default selection of the dropdown. Slightly differentiated from the background with a border 
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Traversal/Hover (Mouse/Touch)
+                    </th>
+                    <td>
+                        <p> 
+                            - When traversing with the touchpad or tap, there is no hover state when the mouse hovers over the dropdown 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - When hovering the dropdown, the mouse turns into a pointed glove, and the background of the component is shaded blue
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - When hovering the dropdown, the mouse turns into a pointed glove and the background of the component is shaded gray
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Traversal/Hover (Keyboard)
+                    </th>
+                    <td>
+                        <p> 
+                            - A light blue border is used to indicate tab navigation in the hover state
+                            <br>
+                            - On the page, the focus order begins at the top inner part of the page. This makes it easy to traverse down to this dropdown. Furthermore, this order is intuitive as it follows the logical order that the user views this page as it goes from the top down. However, because it only traverses within the inner part of the page, it makes it so that the sign-in or menu page can't be accessed through the keyboard traversal easily.
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - A dark blue border as well as a shaded background used to indicate tab navigation in the hover state 
+                            <br>
+                            - The focus on this page first goes from left to right then top to bottom. Because the dropdown in this case is in the top right corner, this makes traversing to this component easy and quick. Furthermore, this order makes sense to me as users will read the page from left to right then top down. Lastly, the traversal on this page was efficient as tophat allows you to skip to the content directly rather than have to tab through everything.
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - A dark blue border is used to indicate tab navigation in the hover state 
+                            <br>
+                            - When traversing this page with the tab key, the first thing to pop up was options to skip to the main content, find keyboard shortcuts, and accessibility options. I thought that this was an amazing addition as it allows the user to navigate to this quicker and provides different options for accessibility. 
+                            <br>
+                            - The focus order here was also left to right and then top down. This order makes sense as this is how people will read the page. However, because there were so many different components on this page, it did take a bit more time to reach this specific dropdown.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Active/Open
+                    </th>
+                    <td>
+                        <p> 
+                            - The dropdown menu with options opens up covering up the component 
+                            <br>
+                            - A light blue border highlights the dropdown when clicked 
+                            <br>
+                            - When clicked and activated, the hovered choice is highlighted in blue 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - The dropdown menu with options opens up below the component 
+                            <br>
+                            - When clicked and activated, the hovered choice is highlighted in blue and underlined in some cases 
+                            <br>
+                            - When opened, the arrow on the component flips up
+                            <br>
+                            - On touch, the first choice in the list is shaded blue as well as the background of the dropdown 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - The dropdown menu with options opens up below the component 
+                            <br>
+                            - When clicked and activated, the hovered choice is highlighted in gray and underlined in some cases as well as having a pointed glove mouse
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Action
+                    </th>
+                    <td>
+                        <p> 
+                            - After being activated and clicking an option (new or not) it’ll close out of the activated state
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Selecting options on this dropdown links to a new page 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Selecting options on this dropdown reloads the page 
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Exiting
+                    </th>
+                    <td>
+                        <p> 
+                            - Either by pressing the ESC key or tapping/clicking off, the dropdown collapses 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Either by pressing the ESC key or tapping/clicking off, the dropdown collapses 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - Either by pressing the ESC key or tapping/clicking off, the dropdown collapses 
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Screen Reader
+                    </th>
+                    <td>
+                        <p> 
+                            - The component here is independent so it can be read alone with all of its parts being contained in it.
+                            <br>
+                            - When clicking on the component, the screen reader will read all of the options contained within the dropdown to the user. This is helpful as the user can then know what is in the dropdown menu when it is activated. However, I find it interesting that there is no indication of what the component is and if it is a dropdown menu or not. Adding something like this to the screen reader could be largely helpful when the user is navigating the site.
+                            <br>
+                            - When selecting a choice in this dropdown, the screen reader does not read that choice out loud. The screen reader functionality here seems to only be when it is initially clicked and nothing beyond that 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - For this component, the screen reader could not read it on its own, rather the screen reader could only recognize the component including the help icon/button next to it. Because of this, rather than just reading the dropdown component itself. This could be a bit confusing for the user as the keyboard traversal shows that these are two different components but they are read together by the screen reader. 
+                            <br>
+                            - When it reads the entire contents of the dropdown are said out loud. This contains the menu options as well as my name. I thought that this was super helpful as it allows the user to know what is contained within the drop-down before having to select it.
+                            <br>
+                            - I noticed that ait did not mention the icons or that they were there which could be a little confusing to users.
+                            <br>
+                            - After opening the dropdown, the only way to hear the menu actions was to click on them but because in this dropdown they would lead to different links, this would lead to another page. This feels a bit wrong as there should be a way to hear what the option is again before being traversed to another page 
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            - This component is defined on its own and has it so that the drop-down arrow and current selection are independent as well. Because of this, the screen reader can read the current selection alone and the dropdown arrow on their own. However, the messages are not as descriptive as I think they should be as it’ll just read that it is an arrow drop-down or the current selection word. This isn’t super helpful to some who would need the screen reader’s help in knowing what the dropdown is for or what it contains.
+                            <br>
+                            - Contents of the dropdown are not read aloud which could help know the purpose of the component.
+                            <br>
+                            - When selecting an option in the screen reader reads the name of the option as well as the letter associated with it. Furthermore, because selecting an option reloads the page, after being read aloud, the page reloads. This can be off-putting for the user as they could not want the page to reload before knowing what all their options are.
+                        </p>
+                    </td>
+                </tr>
+             </table>
+
+             <h3> <u> State Models and Component Redesign: </u></h3>
+             <h4> After looking into these components different behaviors when it comes to thier inputs capabilites and output reactions, we can now look at state models in order 
+                to visualize how a user may interact with these components and navigate them. In this section we will be looking specifically at the Google Calander dropdown component
+                and analyzing it in its differnt states, adding changes to improve a users experince, and redesign aspects of the component itself in order to further appeal to the 
+                considerations around users.
+             </h4>
+
+             <div>  
+                <h4> Current State Model: </h4>
+                <img src="./images/State Models/Current.png" width="100%">
+
+
+                <h4> Revised State Model: </h4>
+                <img src="./images/State Models/Revised.png" width="100%">
+
+                <p> It was difficult to find effective tradeoffs that I thought would make sense in these state models as google's dropdown component for their calendar was seemed to have taken into account many of these user needs that we care about. However, I think the small changes I was able to make in the state models above increase the attention to user needs.
+                    <br>
+                    <br>
+
+                    Mouse user change: Here I added a change in the behavior of going from the active state to the default state. Previously, the mouse just needed to be released elsewhere to return to the default state meaning that it could be clicked within the component and released elsewhere and it would still go back to the default state. I thought that this behavior could be a little confusing to the user as they would expect for where they have initially clicked to be where the action should take place. I believe that this boosts learnability and memorability as it is more intuitive to users when using a mouse and allows them to quiclky pick up on the behavior as it is what they would initially assume it to be. Furthermore, this increases efficiency slightly on the application as rather than having to wait for the mouse to be released to do the action, this can happen on mouse pressed, saving slight amounts of time in the program. Lastly, this improves accessibility, as there is less opportunities for misclicks as when using mouse pressed, less accuracy is needed as the mouse could move after the press, and if it was based on the release misclicks could often occur.
+                    <br>
+                    <br>
+                    
+                    Keyboard user change: Here I added that when focused on the dropdown, pressing the esc would make it unfocused and remove the border around the dropdown, returning us to the default state. I thought that this would boost learnability and memorability as the user can move from the active state to the focused state using the esc key and it would be intuitive to the user to be able to press the escape key to further reverse in the states. Furthermore, this would improve accessibility as well in the same vain as it makes it so that predictable and easy to understand quickly for users that may have difficulty with technology. Lastly, this would improve efficeny slightly as well, as the user would be able to just press the escape key twice from the active state in order to get back to the default state.</p>
+
+                <h4> Component Redesign: </h4>
+                <img src="./images/State Models/Redesign.png" width="100%">
+
+             </div>
+
+             <h3> <u> Reflection: </u></h3>
+
+             <p>
+                When it comes to overall usability and accessibility, I think all the components I observed did well overall as when looking for their flaws I had to try many different things and dig deep in order to discover them. For instance, all of them did well when it came to overall usability as they functioned well as dropdown menus and were easy to navigate, even for a first-time user. Furthermore, when it comes to accessibility they did well as things like constraints, screen reading ability, reachability, and more were all accounted for. When reflecting on my own component design, I feel that may have missed out on more visual cues that I could have added such as changing the background color of the dropdown activation. Something like this could increase the contrast of the word within the drop-down even more and increase the ways in which a user is able to interact with this component smoothly. On the other hand, I think that the visual cues I was able to add addressed some of the mismatches described by Kat Holmes. For example, the use of arrow indication makes it so the user has even more indicators that tell and is helpful if a user has poor vision and has to zoom in to the screen and isn’t able to see the dropdown menu activate but sees the arrow flip and know that the dropdown menu has opened. 
+                <br>
+                <br>
+                When it comes to the accessibility of certain components, I found that things could sometimes get in the way and be over-explained by something like a screen reader for someone with an impairment to the point that it is overwhelming. On the other hand, I think things like a menu for shortcuts or accessibility options is really helpful for those with impairments as it gives them more avenues to be able to navigate and engage with the content. Lastly, through the navigation of different platforms, I feel that all users were accounted for in these designs but found a slight preference for mouse users. This is because I found everything from navigation to usage much easier as a mouse user as there were many more obstacles to jump over for the other types of users to gain basic functionality.
+             </p>
+        </section>
+
     </body>
 </html>
